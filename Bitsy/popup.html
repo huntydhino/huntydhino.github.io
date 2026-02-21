@@ -1,0 +1,59 @@
+<style>
+#customPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000000;
+    color: #ffffff;
+    padding: 25px;
+    z-index: 99999;
+    text-align: center;
+    font-family: sans-serif;
+    max-width: 300px;
+    box-shadow: none;
+}
+
+#customPopup h3 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#customPopup p {
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+#popupInstruction {
+    font-size: 0.85em;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+#customPopup button {
+    background-color: #800080;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 0;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.1s ease;
+}
+
+#customPopup button:hover {
+    background-color: #6A006A;
+}
+</style>
+
+<div id="customPopup">
+    <h3 id="popupTitle">Redirection</h3>
+    <p id="popupMessage">redirection vers le projet ?</p>
+    <p id="popupInstruction">appuyez sur esc pour controller la souris.</p>
+    <button id="popupOpenBtn">y aller</button>
+    <button id="popupCloseBtn">fermer</button>
+</div>
